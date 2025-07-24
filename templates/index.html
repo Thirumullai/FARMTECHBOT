@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chat Interface</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<div class="main-container">
+
+    
+    <div class="left-container" >
+        <h1>FarmTechBot</h1>
+        <p id="demo" style="text-align:justify;padding:2px;font-size:18px;"></p>
+       <!-- <p id="animated-text" style="padding:23px;text-align: justify;font-size:19px;">"Hi, I'm here to assist you with questions about soil testing, pest detection, and market linkage. For soil testing, I can provide information on soil testing techniques and improving soil quality. If you have images of pest-affected crops, I can help identify the pest and offer advice on pesticides. Additionally, I can provide current market information to help you sell your agricultural products. Let me know how I can help!"</p>
+  -->  </div>
+    <div class="right-container">
+        <div class="chat-container" id="chat-container">
+            <div class="chat-box" id="chat-box">
+                <!-- Chat messages will be displayed here -->
+            </div>
+            <div class="input-container">
+                <input type="text" id="user-input" placeholder="Type your message...">
+                <div class="button-container">
+                    <button onclick="sendMessage()"><img src="/static/images/send.png" alt="Send" class="icon" ></button>
+                    <button onclick="startSpeechRecognition()"><img src="/static/images/voice.png" alt="voice" class="icon" ></button>
+                    <label for="file-input" class="upload-btn-container">
+                        <img src="/static/images/image.png" alt="Upload Image" class="upload-icon">
+                        <input type="file" id="file-input" class="upload-btn" accept="image/*" required>
+                    </label>
+                   
+                </div>
+                
+            </div>
+            <button onclick="switchToTamil()"> <img src="/static/images/language2.png" style="height:30px;width:70px;" alt="Send" class="icon language-icon"></button>
+       </div>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

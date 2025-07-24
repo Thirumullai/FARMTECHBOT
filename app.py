@@ -1,0 +1,138 @@
+import numpy as np
+from skimage.io import imread
+from skimage.transform import resize
+from skimage.feature import hog
+from sklearn.svm import SVC
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import StandardScaler
+from flask import Flask, render_template, request, jsonify
+import os
+import base64
+from PIL import Image
+from io import BytesIO
+import nltk
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.svm import LinearSVC
+import pandas as pd
+
+app = Flask(__name__)
+
+# Assuming you have a dataset directory containing images of pests
+dataset_dir = "pestdataset"
+
+# Load dataset for pest detection
+X = []  # Feature vectors
+y = []  # Labels
+
+# Loop through all image files in the dataset directory
+for img_file in os.listdir(dataset_dir):
+    img_path = os.path.join(dataset_dir, img_file)
+    if os.path.isfile(img_path):
+        img = imread(img_path, as_gray=True)  # Read image in grayscale
+        img = resize(img, (100, 100))  # Resize image to a common size
+        # Extract HOG features
+        features = hog(img, pixels_per_cell=(8, 8), cells_per_block=(2, 2))
+        X.append(features)
+        # Extract label from the filename (assuming the filename contains the class name)
+        label = img_file.split(".")[0]  # Assumes filename format is "classname.png"
+        y.append(label)
+
+# Convert lists to numpy arrays
+X = np.array(X)
+y = np.array(y)
+
+# Train a classifier for pest detection
+pest_detection_clf = make_pipeline(StandardScaler(), SVC(kernel='linear', C=1.0, probability=True))
+pest_detection_clf.fit(X, y)
+
+# Function to predict pest given an image path
+def predict_pest(image_path):
+    img = imread(image_path, as_gray=True)
+    img = resize(img, (100, 100))
+    features = hog(img, pixels_per_cell=(8, 8), cells_per_block=(2, 2))
+    predicted_label = pest_detection_clf.predict([features])[0]
+    return predicted_label
+
+# Download NLTK resources for chatbot
+nltk.download('punkt')
+nltk.download('stopwords')
+
+# Function to preprocess text using NLTK for chatbot
+stop_words = set(stopwords.words('english'))
+
+def preprocess_text(text):
+    tokens = word_tokenize(text)
+    tokens = [token.lower() for token in tokens]
+    words = [word for word in tokens if word.isalpha()]
+    words = [word for word in words if word not in stop_words]
+    preprocessed_text = ' '.join(words)
+    return preprocessed_text
+
+# Load datasets and preprocess for chatbot
+soil_testing_data = pd.read_csv('soil.csv')
+pest_detection_data = pd.read_csv('pest.csv')
+responses_data = pd.read_csv('response.csv')
+combined_data = pd.concat([soil_testing_data, pest_detection_data], ignore_index=True)
+combined_data.dropna(inplace=True)
+combined_data['Preprocessed Question'] = combined_data['Question'].apply(preprocess_text)
+combined_data = combined_data[combined_data['Preprocessed Question'].map(len) > 0]
+
+# Train machine learning model for chatbot
+vectorizer = TfidfVectorizer()
+X_train = vectorizer.fit_transform(combined_data['Preprocessed Question'])
+y_train = combined_data['Intent']
+chatbot_clf = LinearSVC()
+chatbot_clf.fit(X_train, y_train)
+
+# Function to classify intent for chatbot
+def classify_intent(input_text):
+    preprocessed_input = preprocess_text(input_text)
+    if not preprocessed_input:
+        return None
+    input_vector = vectorizer.transform([preprocessed_input])
+    intent = chatbot_clf.predict(input_vector)
+    return intent[0] if len(intent) > 0 else None
+
+# Function to retrieve a single response per intent for chatbot
+def get_response(intent):
+    if intent is None:
+        return "I'm sorry, I couldn't understand your query. Please try again."
+    responses = responses_data.loc[responses_data['Intent'] == intent, 'Response'].tolist()
+    if responses:
+        return responses[0]
+    else:
+        return "I'm sorry, I don't have a response for that query."
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/upload', methods=['POST'])
+def upload():
+    file = request.files['file']
+    img_bytes = file.read()
+    img = Image.open(BytesIO(img_bytes))
+
+    # Save the image to a temporary file
+    temp_image_path = 'temp_image.jpg'
+    img.save(temp_image_path)
+
+    # Process image and predict pest type
+    predicted_pest = predict_pest(temp_image_path)
+
+    # Delete the temporary file
+    os.remove(temp_image_path)
+
+    return jsonify({'pest_type': predicted_pest})
+
+@app.route('/process_input', methods=['POST'])
+def process_input():
+    user_input = request.json['input']
+    predicted_intent = classify_intent(user_input)
+    response = get_response(predicted_intent)
+    return jsonify({'response': response})
+
+if __name__ == '__main__':
+    app.run(debug=True)

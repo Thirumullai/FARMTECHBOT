@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chat Interface</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<div class="chat-container" id="chat-container">
+  <div class="chat-box" id="chat-box">
+    <!-- Chat messages will be displayed here -->
+  </div>
+  <input type="text" id="user-input" placeholder="Type your message...">
+  <button onclick="sendMessage()"><img src="/static/images/send.png" alt="Send" class="icon"></button>
+  <button onclick="startSpeechRecognition()"><img src="/static/images/voice.png" alt="voice" class="icon"></button> <!-- New button for voice input -->
+<label for="file-input" class="upload-btn-container">
+      <img src="/static/images/image.jpg">
+      <input type="file" id="file-input" class="upload-btn" accept="image/*" required>
+  </label>
+</div>
+
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

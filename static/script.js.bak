@@ -1,0 +1,137 @@
+// Function to add a new message to the chat box
+function addToChat(sender, message) {
+  var chatBox = document.getElementById("chat-box");
+  var newMessage = document.createElement("div");
+  newMessage.classList.add("speech-bubble");
+
+  var iconHTML = '';
+
+  if (sender === "user") {
+    newMessage.classList.add("user-message");
+    iconHTML = '<img src="/static/images/user.jpg" alt="User Icon" class="user-icon">';
+  } else {
+    newMessage.classList.add("bot-message");
+    iconHTML = '<img src="/static/images/bot.png" alt="Bot Icon" class="bot-icon">';
+  }
+
+  newMessage.innerHTML = iconHTML + message;
+  chatBox.appendChild(newMessage);
+}
+document.getElementById("user-input").addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault(); // Prevent default form submission behavior
+    sendMessage(); // Call the sendMessage function to handle the form submission
+  }
+});
+
+
+
+// Function to send message or upload image
+function sendMessage() {
+  var userInput = document.getElementById("user-input").value;
+  
+  // Check if user input is an image
+  var fileInput = document.getElementById('file-input');
+  var file = fileInput.files[0];
+  
+  if (file) {
+    // If user uploaded an image, send it for processing
+    sendImage(file);
+    return;
+  }
+
+  // If user input is text, send it for processing
+  if (userInput.trim() !== "") {
+    sendText(userInput);
+  }
+}
+
+// Function to send text message for processing
+function sendText(userInput) {
+  addToChat("user", userInput);
+  document.getElementById("user-input").value = "";
+  
+  // Send user input to server for text processing
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", "/process_input", true);
+  xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+  xhr.onload = function () {
+    if (xhr.status === 200) {
+      var responseData = JSON.parse(xhr.responseText);
+      addToChat("bot", responseData.response);
+      speakResponse(responseData.response);
+    } else {
+      addToChat("bot", "Error processing request.");
+    }
+  };
+
+  xhr.send(JSON.stringify({
+    input: userInput
+  }));
+}
+
+// Function to send image for processing
+function sendImage(imageFile) {
+  var formData = new FormData();
+  formData.append('file', imageFile);
+
+  fetch('/upload', {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => response.json())
+  .then(data => {
+    var pestType = data.pest_type;
+    // Display the predicted pest type in the UI
+    addToChat("bot", "Predicted Pest Type: " + pestType);
+    
+    // Clear the image upload section
+    document.getElementById('file-input').value = '';
+    
+    // Remove the uploaded image preview
+    var uploadPreview = document.getElementById('upload-preview');
+    uploadPreview.innerHTML = '';
+  })
+  .catch(error => console.error('Error:', error));
+}
+
+
+   
+    
+
+
+  
+
+
+// Function to speak out the response
+function speakResponse(response) {
+  var synth = window.speechSynthesis;
+  var utterance = new SpeechSynthesisUtterance(response);
+  utterance.lang = 'en-US';
+  synth.speak(utterance);
+}
+
+// Function to handle speech recognition
+var recognition;
+
+function startSpeechRecognition() {
+  if (!('webkitSpeechRecognition' in window)) {
+    alert("Speech recognition is not supported by this browser");
+  } else {
+    recognition = new webkitSpeechRecognition();
+    recognition.continuous = false;
+    recognition.interimResults = false;
+
+    recognition.lang = 'en-US';
+    recognition.start();
+
+    recognition.onresult = function(event) {
+      var speechResult = event.results[0][0].transcript;
+      document.getElementById("user-input").value = speechResult;
+      sendMessage();
+    };
+    recognition.onerror = function(event) {
+      console.error('Speech recognition error:', event.error);
+    };
+  }
+}

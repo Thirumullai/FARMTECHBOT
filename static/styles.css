@@ -1,0 +1,237 @@
+.main-container {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.main-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/static/images/grass13.jpg');
+  background-size: cover;
+  opacity: 0.7;/* Set opacity to 50% */
+  z-index: -1; /* Ensure the pseudo-element is behind other content */
+}
+
+
+.left-container {
+  
+  float: left;
+  width: 50%;
+  
+}
+
+.right-container {
+  float: right;
+  width: calc(100% - 50%);
+  background-color: rgb(19,46,134);/* Semi-transparent green background */
+  border-radius: 15px; /* Rounded corners */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+
+  background: linear-gradient(135deg, #CDDFEB, #54A8D6, #708D1B);
+  /* Gradient from blue to green */
+}
+
+.left-container h1 {
+  margin-top: 0; /* Remove default margin */
+}
+
+.left-container p {
+  margin-bottom: 20px; /* Add some space below the paragraph */
+}
+
+.chat-container {
+ 
+  width: 90%;
+  height: 500px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Other styles remain the same */
+.chat-box {
+  height: 400px;
+  overflow-y: scroll;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.message {
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.user-message {
+  float: left;
+  clear: both;
+  font-weight:bolder;
+  color:#F1006A;
+  border-radius: 15px;
+  padding: 10px 15px;
+  text-align: justify; /* Add text-align property */
+  word-wrap: break-word; /* Allow long words to break and wrap onto the next line */
+  overflow-wrap: break-word;
+  position: relative; 
+ 
+}
+
+.bot-message {
+  float: right;
+  clear: both;
+  color: #3E12EB;
+  font-weight:bolder;
+  border-radius: 15px;
+  padding: 10px 15px;
+  text-align: justify; /* Add text-align property */
+}
+
+
+.bot-message:before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #f0f0f0; /* Set border color to match background */
+  border-top: 10px solid #f0f0f0; /* Set border color to match background */
+  border-bottom: 10px solid transparent;
+  left: 19px;
+  bottom: -19px;
+}
+
+
+
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  margin-right: 5px;
+}
+
+button {
+  padding: 0; /* Remove padding to avoid extra space */
+  background-color: transparent;/* Set background color to transparent */
+  border: none; /* Remove border */
+  cursor: pointer;
+}
+
+/*button:hover {
+  background-color: #0056b3;
+}*/
+
+.icon {
+  width: 25px; /* Adjust icon size as needed */
+  height: 25px;
+  
+ 
+}
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+.input-container input[type="text"] {
+  flex: 1; /* Take up remaining space */
+}
+
+.button-container {
+  display: flex;
+}
+
+.button-container button {
+  margin-left: 5px; /* Add spacing between buttons */
+}
+
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+#output {
+  margin-top: 20px;
+}
+
+
+.upload-btn-container {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.upload-btn-container img {
+  width: 35px; /* Adjust icon size as needed */
+  height: 35px;
+  margin-right: 10px; /* Add margin to separate it from other icons */
+}
+
+.upload-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.user-icon,
+.bot-icon {
+  position: absolute; /* Set position to absolute */
+  top: 0; /* Position icon at the top of the message container */
+  left: -30px; 
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  
+  background-color: #ccc;
+  border-radius: 50%;
+}
+/* Speech bubble styling */
+.speech-bubble {
+  position: relative;
+  background-color: hsl(0, 0%, 100%);
+  margin-left:20px;
+  padding: 10px;
+  border-radius: 10px;
+  border:1px solid black;
+  width: fit-content;
+  max-width: 70%;
+  margin-bottom: 10px;
+}
+
+.speech-bubble:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: -15px;
+  right: 20px;
+  border: 10px solid;
+  border-color: white transparent transparent transparent;
+  
+}
+
+
+/*
+.button-container button:hover {
+  background: linear-gradient(135deg, #CDDFEB, #54A8D6, #708D1B); 
+}
+*/
+/*
+.upload-icon:hover,
+.language-icon:hover {
+    background: linear-gradient(135deg, #CDDFEB, #54A8D6, #708D1B);   
+}
+*/

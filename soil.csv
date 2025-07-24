@@ -1,0 +1,33 @@
+Question,Intent
+What is the ideal pH level for growing tomatoes?,soil_testing
+How can I test the nutrient levels in my soil?,level
+What are the signs of nutrient deficiency in plants?,nutrient_deficiency
+how to improve soil quality,soil_quality
+how to test the soil?,test_soil
+What nutrients are lacking in my soil?,lacking
+How can I improve soil fertility on my field?,improve
+"What is the pH level of my soil, and is it suitable for my crops?",suitable
+what are the soil testing techniques?,techniques
+what are the different types of soil in thanjavur district?,types_soil
+"which type of soil the vegetables Brinjal , Tomato,Lady's finger,Green chilli, Bottle gourd,Bitter gourd,Snake gourd, Ridge gourd, Ash gourd , Cluster beans,cabbage, cauliflower, carrot, radish, and beans are grown?",vegetables
+which type of soil the sugarcane are grown?,sugarcane
+which type of soil the rice are grown?,rice
+which type of soil the banana are grown?,banana
+which type of soil the coconut are grown?,coconut
+which type of soil the groundnut are grown?,groundnut
+which type of soil the sesame are grown?,sesame
+which type of soil the cotton are grown?,cotton
+"What are the optimal ranges for pH, organic matter content, soil texture, and nutrient levels in the following soil types: black soil (Regur Soil), red soil, alluvial soil, laterite soil, and coastal soil?""",ranges
+"which type of soil the pulses Black gram, Green gram , Red gram , Bengal gram , Cowpea , Horse gram,soybean, pigeon pea, and lentils  are grown?",pulses
+can you suggest a soil type,suggest
+"ph level-neutral,nutrient level- rich,organic matter content-moderate to high,soil texture-Loamy",rich
+,
+"ph level-neutal,nutrient level- rich,organic matter content-moderate to high ,soil texture-sandy",neutral
+"ph level-alkaline,nutrient level- high,organic matter content-moderate,soil texture-heavy clayey",high
+"ph level-Acidic,nutrient level- moderate to low ,organic matter content- low to moderate,soil texture-sandy to clayey",moderate_to_low
+"ph level-highly acidic,nutrient level- poor,organic matter content-low,soil texture-coarse",poor
+"ph level-highly acidic,nutrient level- poor,organic matter content-low,soil texture-gravelly",highly_acidic
+"ph level-neutral to slightly alkaline ,nutrient level- moderate,organic matter content-moderate to high,soil texture-sandy",moderate
+"ph level-neutral to slightly alkaline ,nutrient level- moderate,organic matter content-moderate to high,soil texture-loamy",moderate_to_high
+hi,hii
+jassides affected my crops what pesticide should i use?,agri

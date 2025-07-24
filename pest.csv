@@ -1,0 +1,279 @@
+Question,Intent
+How can I identify aphids on my plants?,pest_detection
+What are the common symptoms of powdery mildew?,pest_detection
+How can I identify aphids on my plants?,pest_detection
+What are the common symptoms of powdery mildew?,pest_detection
+pest level, pest_detection
+"Aphids have affected my black gram crop,what pesticide should I use ?",aphids_pesticide
+"Aphids have affected my black gram crop,what organic manure should I use ?",aphids_organic manure
+"Aphids have affected my green gram plant,what pesticide should I use ?",aphidsg_pesticide
+"Aphids have affected my green gram plant,what organic manure should I use ?",aphidsg_organic manure
+"Aphids have affected my groundnut plant,what pesticide should I use ?",aphidsground_pesticide
+"Aphids have affected my groundnut plant,what organic manure should I use ?",aphidsground_organic manure
+"Aphids have affected my sesame plant,what pesticide should I use ?",aphidssesame_pesticide
+"Aphids have affected my sesame plant,what organic manure should I use ?",aphidssesame_organic manure
+"Aphids have affected my brinjal,what pesticide should I use ?",aphidsbrinjal_pesticide
+"Aphids have affected my brinjal,what organic manure should I use ?",aphidsbrinjal_organic manure
+"Aphids have affected my tomato plant,what pesticide should I use ?",aphidst_pesticide
+"Aphids have affected my tomato plant,what organic manure should I use ?",aphidst_organic manure
+"Aphids have affected my lady's finger plant,what pesticide should I use ?",aphidsl_pesticide
+"Aphids have affected my lady's finger plant,what organic manure should I use ?",aphidsl_organic manure
+"Aphids have affected my green chilli plant,what pesticide should I use ?",aphidschilli_pesticide
+"Aphids have affected my green chilli plant,what organic manure should I use ?",aphidschilli_organic manure
+"Aphids have affected my bottle gourd plant ,what pesticide should I use ?",aphidsbottle_pesticide
+"Aphids have affected my bottle gourd plant,what organic manure should I use ?",aphidsbottle_organic manure
+"Aphids have affected my bitter gourd plant,what pesticide should I use ?",aphidsbitter_pesticide
+"Aphids have affected my bitter gourd plant,what organic manure should I use ?",aphidsbitter_organic manure
+"Aphids have affected my ash gourd plant,what pesticide should I use ?",aphidsash_pesticide
+"Aphids have affected my ash gourd plant,what organic manure should I use ?",aphidsash_organic manure
+"Aphids have affected my cabbage plant,what pesticide should I use ?",aphidscab_pesticide
+"Aphids have affected my cabbage plant,what organic manure should I use ?",aphidscab_organic manure
+"Aphids have affected my cauliflower plant,what pesticide should I use ?",aphidscauli_pesticide
+"Aphids have affected my cauliflower plant,what organic manure should I use ?",aphidscauli_organic manure 
+"Aphids have affected my carrot plant,what pesticide should I use ?",aphids_carrot
+"Aphids have affected my carrot plant,what organic manure should I use ?",aphidscarrot_organic manure
+"Aphids have affected my radish plant,what pesticide should I use ?",aphids_radish
+"Aphids have affected my radish plant,what organic manure should I use ?",aphidsradish_organic manure
+"Aphids have affected my banana plant,what pesticide should I use ?","aphids_banana"""
+"Aphids have affected my banana plant,what organic manure should I use ?",aphidsba_organic manure
+"Aphids have affected my red gram plant,what pesticide should I use ?",aphids_red gram
+"Aphids have affected my red gram plant,what organic manure should I use ?",aphidsred_organic manure
+"Aphids have affected my cowpea  plant,what pesticide should I use ?",aphids_cowpea
+"Aphids have affected my cowpea plant,what organic manure should I use ?",aphidscow_organic manure
+"Aphids have affected my horse gram plant,what pesticide should I use ?",aphids_hores gram
+"Aphids have affected my horse gram plant,what organic manure should I use ?",aphidshorse_organic manure
+"Aphids have affected my lentils plant,what pesticide should I use ?",aphids_lentils
+"Aphids have affected my lentils plant,what organic manure should I use ?",aphidslen_organic manure
+,
+,
+"stem borer have affected my rice plant,what pesticide should I use ?",stemborer_rice
+"stem borer have affected my rice plant,what organic manure should I use ?",stemborer_organic manure
+"stem borer have affected my sugarcane plant,what pesticide should I use ?",stemborer_sugercane
+"stem borer have affected my sugarcane plant,what organic manure should I use ?",stemborersugar_organic manure
+"Thrips have affected my groundnut plant,what pesticide should I use ?",thrips_groundnut
+"Thrips have affected my groundnut plant,what organic manure should I use ?",thrips_organic manure
+"Rust thrips have affected my banana plant,what pesticide should I use ?",thrips_banana
+"Rust thrips have affected my banana plant,what organic manure should I use ?",thripsbanana_organic manure
+"Leafhoppers have affected my black gram plant,what pesticide should I use ?",Leafhoppers_black gram
+"Leafhoppers have affected my black gram plant,what organic manure should I use ?",Leafhoppers_organic manure
+"Fruit and shoot borer have affected my brinjal plant,what pesticide should I use ?",Fruit and shoot borer_pesticide
+"Fruit and shoot borer have affected my brinjal plant,what organic manure should I use ?",Fruit and shoot borer_brinjal
+"Jassids have affected my brinjal plant,what pesticide should I use ?",Jassids_pesticide
+"Jassids have affected my brinjal plant,what organic manure should I use ?",Jassids_brinjal
+"Whiteflies have affected my brinjal plant,what pesticide should I use ?",Whiteflies_pesticide
+"Whiteflies have affected my brinjal plant,what organic manure should I use ?",Whiteflies_organic manure
+"Cutworms have affected my tomato plant,what pesticide should I use ?",Cutworms_pesticide
+"Cutworms have affected my tomato plant,what organic manure should I use ?",Cutworms_organic manure
+"Whiteflies have affected my tomato plant,what pesticide should I use ?",Whitefliest_pesticide
+"Whiteflies have affected my tomato plant,what organic manure should I use ?",Whiteflies_tomato
+"Leafhopper have affected my lady's finger plant,what pesticide should I use ?",Leafhopper_pesticide
+"Leafhopper have affected my lady's finger plant,what organic manure should I use ?",Leafhopper_ lady's finger
+"Whiteflies have affected my  lady's finger plant,what pesticide should I use ?",Whitefliesl_pesticide
+"Whiteflies have affected my  lady's finger plant,what organic manure should I use ?",Whitefliesl_organic manure
+"Nematodes have affected my  lady's finger plant,what pesticide should I use ?",nematodes_pesticide
+"Nematodes have affected my  lady's finger plant,what organic manure should I use ?",nematodes_organic manure
+"Thrips have affected my green chilli plant,what pesticide should I use ?",Thripschilli_pesticide
+"Thrips have affected my green chilli plant,what organic manure should I use ?",Thrips_green chilli
+"Leafminers have affected my green chilli plant,what pesticide should I use ?",leaf minerchilli_pesticide
+"Leafminers have affected my green chilli plant,what organic manure should I use ?",leaf miner_green chilli
+"Thrips have affected my bottle gourd plant,what pesticide should I use ?",thripsbottle_pesticide
+"Thrips have affected my bottle gourd plant,what organic manure should I use ?",thrips_bottle gourd
+"Red Pumpkin Beetle affected my bitter gourd plant,what pesticide should I use ?",Red Pumpkin Beetle_pesticide
+"Red Pumpkin Beetle affected my bitter gourd plant,what organic manure should I use ?",Red Pumpkin Beetle_bitter gourd
+"Pumpkin beetles affected my snake gourd plant,what pesticide should I use ?", Pumpkin Beetle_pesticide
+"Pumpkin beetles affected my snake gourd plant,what organic manure should I use ?",Pumpkin Beetle_organic manure
+"Leaf miners affected my snake gourd plant,what pesticide should I use ?",Leaf minerssnake_pesticide
+"Leaf miners affected my snake gourd plant,what organic manure should I use ?",Leaf miners_snake gourd
+"spider mites affected my ridge gourd plant,what pesticide should I use ?",spider mites_pesticide
+"spider mites affected my ridge gourd plant,what organic manure should I use ?",spider mites_organic manure
+"leafhopper affected my ridge gourd plant,what pesticide should I use ?",leafhopper_pesticide
+"leafhopper affected my ridge gourd plant,what organic manure should I use ?",leafhopper_ridge gourd
+"aphids affected my ridge gourd plant,what pesticide should I use ?",aphids_pesticide
+"aphids affected my ridge gourd plant,what organic manure should I use ?",aphids_organic manure
+"whiteflies affected my ash gourd plant,what pesticide should I use ?",whiteflies_pesticide
+"whiteflies affected my ash gourd plant,what organic manure should I use ?",whiteflies_ash gourd
+"leafhopper affected my ash gourd plant,what pesticide should I use ?",leafhopper_pesticide
+"leafhopper affected my ash gourd plant,what organic manure should I use ?",leafhopper_ash gourd
+"pod borer affected my cluster beans plant,what pesticide should I use ?",pod borer_pesticide
+"pod borer affected my cluster beans plant,what organic manure should I use ?",pod borer_cluster beans
+"whiteflies affected my cluster beans plant,what pesticide should I use ?",whiteflies_pesticide
+"whiteflies affected my cluster beans plant,what organic manure should I use ?",whiteflies_organic manure
+"Leafhoppers affected my cluster beans plant,what pesticide should I use ?",leafhopperbeans_pesticide
+"Leafhoppers affected my cluster beans plant,what organic manure should I use ?",leafhopperbeans_organic manure
+"Diamondback moth affected my cabbage plant,what pesticide should I use ?",Diamondback moth_pesticide
+"Diamondback moth affected my cabbage plant,what oragnic manure should I use ?",Diamondback moth_cabbage
+"Cabbage aphids affected my cabbage plant,what pesticide should I use ?",Cabbage_pesticide
+"Cabbage aphids affected my cabbage plant,what organic manure should I use ?",Cabbage_organic manure
+"Cabbage whitefly affected my cabbage plant,what pesticide should I use ?",whitefly_pesticide
+"Cabbage whitefly affected my cabbage plant,what organic manure should I use ?",whitefly_cabbage plant
+"Cutworms affected my cabbage plant,what pesticide should I use ?",cutworms_pesticide
+"Cutworms affected my cabbage plant,what organic manure should I use ?",cutworms_organic manure
+"Banana rust thrips affected my banana plant,what pesticide should I use ?",banana_pesticide
+"Banana rust thrips affected my banana plant,what organic manure should I use ?",banana_oragnic manure
+"Diamondback Moths affected my Cauliflower plant,what pesticide should I use ?",Diamondback Moths_pesticide 
+"Diamondback Moths affected my Cauliflower plant,what organic mnaure should I use ?",Diamondback Moths_Cauliflower
+"White Butterflies affected my Cauliflower plant,what pesticide should I use ?",White Butterflies_pesticide 
+"White Butterflies affected my Cauliflower plant,what organic manure should I use ?",White Butterflies_oragnic manure 
+"Leafhoppers affected my carrot plant,what pesticide should I use ?",Leafhoppers_pesticide
+"Leafhoppers affected my carrot plant,what organic manure should I use ?",Leafhoppers_carrot
+"Cutworms affected my carrot plant,what pesticide should I use ?",cutworms_pesticide
+"Cutworms affected my carrot plant,what organic manure should I use ?",cutworms_organic manure
+"Flea beetles affected my radish plant,what pesticide should I use ?",Flea_pesticide  
+"Flea beetles affected my radish plant,what organic manure should I use ?",Flea_organic manure 
+"Cutworms affected my radish plant,what pesticide should I use ?",cutworms_pesticide
+"Cutworms affected my radish plant,what organic manure should I use ?",cutworms_organic manure
+"Nematodes affected my coconut plant,what pesticide should I use ?",nematodesco_pesticide
+"Nematodes affected my coconut plant,what organic manure should I use ?",nematodesco_organic manure
+"Pod borer affected my red gram plant,what pesticide should I use ?",Pod borer_pesticide
+"Pod borer affected my red gram plant,what organic manure should I use ?",Pod borer_organic manure
+"Banana weevil affected my banana plant,what pesticide should I use ?",Banana weevil_pesticide
+"Banana weevil affected my banana plant,what organic manure should I use ?",Banana weevil_organic manure
+"Banana stem borer affected my banana plant,what pesticide should I use ?",Banana stem borer_pesticide
+"Banana stem borer affected my banana plant,what organic manure should I use ?",Banana stem borer_banana
+"Spotted pod borer affected my red gram plant,what pesticide should I use ?",red gram_pesticide
+"Spotted pod borer affected my red gram plant,what organic manure should I use ?",red gram_organic manure
+"Thrips affected my red gram plant,what pesticide should I use ?",thripsred_pesticide
+"Thrips affected my red gram plant,what organic manure should I use ?",thripsred_organic manure
+"Whitefly affected my red gram plant,what pesticide should I use ?",Whiteflyred_pesticide
+"Whitefly affected my red gram plant,what organic manure should I use ?",Whiteflyred_organic manure
+"Pod borer affected my bengal gram plant,what pesticide should I use ?",Pod_pesticide
+"Pod borer affected my bengal gram plant,what organic manure should I use ?",Pod_organic manure
+"Whitefly affected my bengal gram plant,what pesticide should I use ?",White_pesticide
+"Whitefly affected my bengal gram plant,what organic manure should I use ?",White_organic manure
+"Soybean pod borer affected my soybean plant,what pesticide should I use ?",Soybean pod borer_pesticide
+"Soybean pod borer affected my soybean plant,what organic manure should I use ?",Soybean pod borer_organic manure
+"Spotted pod borer affected my soybean plant,what pesticide should I use ?",Spotted pod borer_pesticide
+"Spotted pod borer affected my soybean plant,what organic manure should I use ?",Spotted pod borer_organic manure
+"Leaf folder affected my soybean plant,what pesticide should I use ?",soybean_pesticide
+"Leaf folder affected my soybean plant,what organic manure should I use ?",soybean_organic manure
+"Whitefly affected my soybean plant,what pesticide should I use ?",soy_pesticide
+"Whitefly affected my soybean plant,what organic manure should I use ?",soy_organic manure
+"Thrips affected my soybean plant,what pesticide should I use ?",Thripssoy_pesticide
+"Thrips affected my soybean plant,what organic manure should I use ?",Thripssoy_organic manure
+"Pod borer affected my pigeon pea plant,what pesticide should I use ?",pigeon pea_pesticide
+"Pod borer affected my pigeon pea plant,what organic manure should I use ?",pigeon pea_organic manure
+"Spotted pod borer affected my pigeon pea plant,what pesticide should I use ?",pigeon_pesticide
+"Spotted pod borer affected my pigeon pea plant,what organic manure should I use ?",pigeon_organic manure
+"Stem borer affected my pigeon pea plant,what pesticide should I use ?",Stem borer_pesticide
+"Stem borer affected my pigeon pea plant,what organic manure should I use ?",Stem borer_organic manure
+"Thrips affected my pigeon pea plant,what pesticide should I use ?",pigeon pea_pesticide
+"Thrips affected my pigeon pea plant,what organic manure should I use ?",pigeon pea_organic manure
+"Whitefly affected my pigeon pea plant,what pesticide should I use ?",pigeon pea_pesticide
+"Whitefly affected my pigeon pea plant,what organic manure should I use ?",pigeon pea_organic manure
+,
+,
+,
+,
+,
+,
+,
+,
+" Thrips affected my lentils plant,what pesticide should I use ?", Thripslentil_pesticide
+" Thrips affected my lentils plant,what organic manure should I use ?", Thripslentil_organic manure
+"Whitefly affected my lentils plant,what pesticide should I use ?",lentils_pesticide
+"Whitefly affected my lentils plant,what organic manure should I use ?",lentils_organic manure
+"Pod borer affected my lentils plant,what pesticide should I use ?",lentilspod_pesticide
+"Pod borer affected my lentils plant,what organic manure should I use ?",lentilspod_organic manure
+"Leaf miner affected my lentils plant,what pesticide should I use ?",Leaf miner_pesticide
+"Leaf miner affected my lentils plant,what organic manure should I use ?",Leaf miner_organic manure
+"Cutworms affected my lentils plant,what pesticide should I use ?",Cutworms_pesticide
+"Cutworms affected my lentils plant,what organic manure should I use ?",Cutworms_organic manure
+"Wireworms affected my lentils plant,what pesticide should I use ?",Wireworms_pesticide
+"Wireworms affected my lentils plant,what organic manure should I use ?",Wireworms_organic manure
+"bollworm affected my cotton plant,what pesticide should I use ?",bollworm_pesticide
+"bollworm affected my cotton plant,what organic manure should I use ?",bollworm_organic manure
+"whitefly affected my cotton plant,what pesticide should I use ?",cotton_pesticide
+"whitefly affected my cotton plant,what organic manure should I use ?",cotton_organic manure
+"jassids affected my cotton plant,what pesticide should I use ?",jassidsc_pesticide
+"jassids affected my cotton plant,what organic manure should I use ?",jassids_organic manure
+"shoot borer affected my sugarcane plant,what pesticide should I use ?",shoot borer_pesticide
+"shoot borer affected my sugarcane plant,what organic manure should I use ?",shoot borer_organic manure
+"white grup affected my sugarcane plant,what pesticide should I use ?",white grup_pesticide
+"white grup affected my sugarcane plant,what organic manure should I use ?",white grup_organic manure
+"leaf folder affected my rice plant,what pesticide should I use ?",rice_pesticide
+"leaf folder affected my rice plant,what organic manure should I use ?",rice_organic manure
+"brown plant hopper affected my rice plant,what pesticide should I use ?",brown plant hopper_pesticide
+"brown plant hopper affected my rice plant,what organic manure should I use ?",brown plant hopper_organic manure
+"jassids affected my sesame plant,what pesticide should I use ?",jassid_pesticide
+"jassids affected my sesame plant,what organic manure should I use ?",jassid_organic manure
+"whiteflies affected my sesame plant,what pesticide should I use ?",whitefly_pesticide
+"whiteflies affected my sesame plant,what organic manure should I use ?",whiteflies_organic manure
+"leaf miner affected my groundnut plant,what pesticide should I use ?",groundnut_pesticide
+"leaf miner affected my groundnut plant,what organic manure should I use ?",groundnut_organic manure
+"pod borer affected my green gram plant,what pesticide should I use ?",green gram_pesticide
+"pod borer affected my green gram plant,what organic manure should I use ?",green gram_organic manure
+"pod borer affected my black gram plant,what pesticide should I use ?",pod borer_pesticide
+"pod borer affected my black gram plant,what organic manure should I use ?",pod borer_organic manure
+"leaf hopper affected my green gram plant,what pesticide should I use ?",leaf hopper_pesticide
+"leaf hopper affected my green gram plant,what organic manure should I use ?",leaf hopper_organic manure
+"leaf hopper affected my black gram plant,what pesticide should I use ?",leaf hopper_pesticide
+"leaf hopper affected my black gram plant,what organic manure should I use ?",leaf hopper_organic manure
+How can I find buyers for my produce?,buyers_produce
+What are the best markets for my specific crop?,best markets_specific crops
+How do I negotiate fair price with buyers?,negotiate_fairprice
+Are there any government programs or initiative to help with market?,government programs_initiatives
+What transportation options are available to get my products to market?,transportationoptions_products
+How can I establish long term relationships with buyers?,relationships_buyers
+What marketing strategies can I use to promote my products?,marketingstrategies_promote
+What marke trends should I be aware of to make informed decisions?,markettrends_aware_informeddecisions
+How can I adapt my production practices to meet changing consumer preferences?,productionpractices_consumerpreferences
+Are there any market access barries I needto be aware ?,barriers_aware
+How can I stay informed about market demand fluctuations and adjust my production accordingly?,demandfluctuations_adjust_production
+What are the risks associated with market linkage?,risks_marketlinkages
+How can I mitigate them?,mitigate
+Are there any opportunities for valu-added processing to increase market competitiveness?,opportunities_value-added_increase
+What are the current market prices for crops? ,current_marketprice
+Which market is offering the best price for my produce?,bestprice_myproduce
+How can I access market information for my crops? ,information_crops
+Are there any market fluctuations expected for my crops?,marketfluctuations_expected_crops
+What are the transportation options available to take my produce to the market?,transportationoption_produce
+ How do I calculate the transportation costs to different markets?,calculate_transportationcosts
+What are the market trends for my specific crop?,markettrends_specificcrop
+Are there any government schemes or subsidies available for marketing agricultural produce?,governmentschemes_subsidies
+How can I improve my bargaining skills in the market?,improve_bargainingskills
+What are the requirements for selling my produce in different markets?,requirements_selling
+How can I find buyers for my agricultural produce? ,find_buyers_produce
+What are the market demands for different varieties of my crop? ,marketdemands_varieties
+ How do I determine the quality standards required for selling in the market?,qualitystandards_selling
+What are the storage facilities available near the market?,storagefacilities_availablenear
+How do I prevent post-harvest losses while waiting for the market?, preventpost-harvest_losses_waiting
+Are there any value addition opportunities for my produce before selling?,valueaddition_opportunities_beforeselling
+How do I handle market competition from other farmers?,handle_competition
+What are the market access challenges in my region?,access_challenges
+What are the market conditions during different seasons? ,conditions_differentseasons
+How do I handle price volatility in the market?   ,handle_price_volatility
+How do I build relationships with buyers and traders in the market? ,build_relationships_buyers 
+What are the market access barriers for small-scale farmers?, accessbarriers_small-scale farmers
+How do I stay updated on market trends and developments? ,updated_markettrends
+How do I assess the market demand for processed agricultural products? ,marketdemand_processed_agriculturalproducts
+How do I market my produce online or through e-commerce platforms?, produceonline_e-commerce 
+How do I differentiate my product in the market to stand out?,differentiate_ standout
+How do I handle marketing during times of oversupply? ,handle_oversupply
+What are the market requirements for export of agricultural produce? ,marketrequirements_ export
+How do I access market information in remote or rural areas?,access_rural_remote
+How do I ensure fair pricing for my agricultural produce?,ensure_fairpricing
+How do I navigate the process of selling directly to consumers?,navigate_sellingdirectly
+How do I obtain market access for organic or specialty crops?,obtain_organic_specialtycrops
+How do I assess the market potential for a new crop I want to cultivate? ,access_newcrop_cultivate
+What are the market preferences for packaging and labeling?,preferences_packgaing_labelling
+How do I handle price negotiations with middlemen or traders? , handle_pricenegotiations_middleman
+What are the market requirements for certifications such as organic or fair trade?,requirements_certifications
+How do I establish long-term contracts with buyers? ,establish_long-termcontracts
+What are the risks associated with selling in different markets?, risks_selling_different
+How do I analyze the market demand and supply dynamics for my crop?,analyze_demand_supplydynamics
+How do I market my produce effectively to attract buyers?,produce_attract
+How do I stay updated on market trends and developments? ,stayupdated_trends_development
+What crops or products are in demand in nearby markets? ,crop_demand
+Are there any local market days or events where we can sell our goods?,localmarket_sell
+How can we ensure our products meet quality standards for the market?,ensure_qualitystandards
+What are the best times of year to sell certain crops or products?,besttimes_sell
+Are there any cooperative or collective selling options available to us? ,cooperative_collective
+What are the key factors influencing market prices for our goods?,keyfactors_prices
+What are the market opportunities for expanding our sales beyond our local area?,opportunities_expanding
+Are there any emerging market trends we should be aware of? ,emerging_aware
+How can we ensure our pricing remains competitive in the market? ,ensure_pricing_competitive
+How can we maintain consistent quality standards for our products in the market? ,maintain_qualitystandards
+Are there any market access barriers we need to address?,access_barriers_address
+
+current price of rice,price
+Are there any online platforms or apps specifically designed for farmers to stay updated on market trends?,online

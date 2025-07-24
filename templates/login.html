@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        /* CSS for animation */
+        @keyframes animatedText {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        .animated-text {
+            animation: animatedText 2s ease-in-out infinite alternate;
+            text-align: center; 
+            
+            /* Center the text horizontally */
+        }
+
+        /* CSS for form container */
+        .form-container {
+            width: 300px;
+            margin: 100px auto 200px; /* Center the container horizontally and adjust margins */
+            padding: 40px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px) saturate(180%);
+            background-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(240, 185, 185, 0.18);
+            transition: 0.3s ease-in-out;
+            text-align: center; /* Center text horizontally */
+        }
+
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-container form label,
+        .form-container form input,
+        .form-container form button {
+            margin-bottom: 10px; /* Add some space between items */
+        }
+
+        .but {
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        .but:hover {
+            background-color: rgb(18, 152, 241);
+        }
+      
+        .header-container {
+           
+           
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-container img {
+            width: 50px;
+            height: auto;
+            margin-right: 10px; /* Add some space between image and text */
+        }
+
+        body {
+    background-image: url('/static/images/farming2.gif');
+    background-size:100% 100%;
+    
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    width: 100%; /* Ensure the body covers the entire viewport width */
+    height: 100vh; /* Set the height to cover the entire viewport height */
+    margin: 0; /* Reset any default margin */
+    padding: 0; /* Reset any default padding */
+    
+}
+</style>
+</head>
+<body>
+    
+    <div class="header-container">
+        <img src="/static/images/bot1.png" style="height:50px;width:70px;" alt="FarmTechBot Icon">
+        <h1 class="animated-text">WELCOME TO FARMTECHBOT</h1>
+    </div>
+    <div class="form-container">
+        <h1 style="margin-bottom:20px;text-align:center;color:rgb(18, 152, 241)"><b>Register Here!</b></h1>
+        <form action="{{ url_for('store_phone') }}" method="POST" >
+            <label for="phone_number" style="font-size:20px;"><b>Phone Number</b></label>
+            <input type="tel" id="phone_number" name="phone_number" pattern="[0-9]{10}"  required placeholder="Enter your phone number">
+            <button type="submit" style="margin:30px;" class="but" onclick="validatePhoneNumber()">Sign Up</button>
+        </form>
+    </div>
+    <script>
+        // Function to validate phone number and show signup success prompt
+function validatePhoneNumber() {
+    var phoneNumber = document.getElementById('phone_number').value;
+    if (phoneNumber.length !== 10 || isNaN(phoneNumber)) {
+        alert("Please enter a 10-digit phone number.");
+    } else {
+        // If the phone number is valid, show signup success prompt
+        showSignupSuccess();
+    }
+}
+
+// Function to show signup success prompt
+function showSignupSuccess() {
+    alert("Signup successful!");
+}
+
+
+        
+    </script>
+</body>
+</html>
